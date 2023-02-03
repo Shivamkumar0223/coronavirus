@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#game{
+    height: 500px;
+    width: 390px;
+    border: 1px solid black;
+    margin:1rem auto;
+    background-color: rgb(210, 14, 164);
+
+    background:url(pic.png);
+    padding-left: 10px;
+    background-size: contain;
+    overflow: hidden;
+
+}
+
+
+.dd{
+    background-color: black;
+    
+}
+#bluecar{
+    height:100px;
+    width:0px;
+    background-color:black;
+    position: relative;
+    top:0px;
+    left:0px;
+    animation: move 1.5s linear infinite ;
+    
+}
+#bluecar img{
+    height:150px;
+}
+@keyframes move {
+    0%{
+        top:0px;
+    }
+    100%{
+        top:501px;
+    }
+    
+}
+#mycar{
+    height: 100px;
+    width:130px;
+    background-color:0px;
+    position:relative;
+    top: 250px;
+    left:130px;
+    text-align: center;
+
+}
+
+#mycar img{
+    height:150px;
+}
+#result{
+    height: 200px;
+    width:400px;
+    background-color:cornflowerblue;
+    margin: 1rem auto;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: centre;
+    color:#f0f8ff;
+    display:none;
+
+}
+
+#score{
+    font-size: 2.2rem;
+    color:red;
+
+}
+
+
+
+#btnn{
+    padding: 1px;
+    border-radius: 20px;
+    border:none;
+    background-color: black;
+    color:cyan;
+    font-size: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#bitcoin img{
+    height:100px;
+}

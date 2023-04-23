@@ -1,28 +1,30 @@
-var bluecar = document.getElementById("bluecar");
-var mycar = document.getElementById("mycar");
+var coronavirus = document.getElementById("coronavirus");
+var san = document.getElementById("san"); 
 var result = document.getElementById("result");
 const score = document.getElementById("score");
 var game = document.getElementById("game");
 var counter = 0;
 
-//bluecar move
+//coronavirus move
 
-bluecar.addEventListener("animationiteration",function(){
+coronavirus.addEventListener("animationiteration",function(){
     var random=((Math.floor(Math.random() *3))*130)
-    bluecar.style.left = random + "px";
+    coronavirus.style.left = random + "px";
     counter++
 })
 
-//mycar move
+//san 
 window.addEventListener("keydown", function(e){
-   if(e. keyCode =="39") var mycarLeft = parseInt(window.getComputedStyle(mycar).getPropertyValue("left"))
-if(mycarLeft < 260) mycar.style.left = (mycarLeft + 130) + "px";
+   if(e. keyCode =="39") var sanLeft = parseInt(window.getComputedStyle(san).getPropertyValue("left"))
+if(sanLeft < 260) san.style.left = (sanLeft + 130) + "px";
+
 
 
 
 if (e.keyCode =="37"){
-    var mycarLeft = parseInt(window.getComputedStyle(mycar).getPropertyValue("left"))
-if(mycarLeft > 0) mycar.style.left = (mycarLeft - 130) + "px"
+    var sanLeft = parseInt(window.getComputedStyle(san).getPropertyValue("left"))
+if(sanLeft > 0) san.style.left = (sanLeft - 130) + "px"
+
 
 }
 
@@ -32,11 +34,11 @@ if(mycarLeft > 0) mycar.style.left = (mycarLeft - 130) + "px"
 
 setInterval (function gameover (){
 
-    var bluecarTop = parseInt(window.getComputedStyle(bluecar).getPropertyValue("top"))
-    var bluecarLeft = parseInt(window.getComputedStyle(bluecar).getPropertyValue("left"))
-    var mycarLeft = parseInt(window.getComputedStyle(mycar).getPropertyValue("left"))
+    var coronavirusTop = parseInt(window.getComputedStyle(coronavirus).getPropertyValue("top"))
+    var coronavirusLeft = parseInt(window.getComputedStyle(coronavirus).getPropertyValue("left"))
+    var sanLeft = parseInt(window.getComputedStyle(san).getPropertyValue("left"))
     
-    if((bluecarLeft === mycarLeft ) && (bluecarTop > 200) && (bluecarTop < 450) ){
+    if((coronavirusLeft === sanLeft ) && (coronavirusTop > 200) && (coronavirusTop < 450) ){
 
         result.style.display = "block";
         game.style.display = "none";
